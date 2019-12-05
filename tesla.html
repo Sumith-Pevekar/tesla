@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style type="text/css">
+.info
+{
+  background: url(https://wallpapercave.com/wp/wp3589934.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#img5
+{
+    width: 80px;
+}
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+    color: black;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+#switch
+{
+    width:300px;
+}
+#scroll
+{
+    width:60px;
+
+}
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.logo {
+    width: 150px;
+}
+.logo1 {
+    width: 100px;
+    color: white;
+}
+
+.hide-mobile {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 30px;
+    margin-top: 45%;
+}
+
+.server {
+    width: 30%;
+}
+h1
+{
+    color: rgb(232, 218, 218);
+    position: relative;
+}
+.subhead {
+    position: relative;
+    color:black;    
+    font-size: 1.1em;
+}
+
+.blue-container {
+    width: 100%;
+    background: #00C2FF;
+    color: #fff;
+    margin-top: 10%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.blue-container:before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #00C2FF;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.blue-container:after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.blue-container ul {
+    transform: skewY(2deg);
+}
+
+.blue-container ul li {
+    margin-bottom: 3em;
+}
+
+.blue-container ul li p {
+    padding: 0 .5em;
+}
+
+.blue-container img {
+    width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img {
+    width: 8%;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+#img1
+{
+    width: 20%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00C2FF;
+}
+
+h2 {
+    margin-top: 7%;
+    color: white;
+}
+
+.cta {
+    background: #00CC80;
+    width: calc(100% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-container {
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+.footer-container .container {
+    transform: skewY(-2deg);
+}
+
+.footer-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3D444A;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+
+ul.footer-links {
+    margin: 0 auto;
+}
+
+ul.footer-links li {
+    display: inline-block;
+}
+
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgba(200, 194, 192 ,0.9);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration:none; ;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+   background: rgba(200, 194, 192 ,0.1);
+
+
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+    background:rgba(200, 194, 192 ,0.1);
+}
+
+.exit-btn img {
+    width: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px)  {
+
+    .server {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .blue-container {
+        margin: 0;
+    }
+
+    .blue-container img {
+        width: 20%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 11%;
+        margin-top: -6px;
+    }
+
+    .blue-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .blue-container ul li {
+        margin-bottom: 0;
+    }
+
+    .blue-container ul li p {
+        padding: 0 .8em;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width: 875px)  {
+
+    .subhead {
+        margin-bottom: 15%;
+    }
+
+    .blue-container ul {
+        margin: 0 0 4% 0;
+    }
+
+    .gray-container ul {
+        margin: 4% 0 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px)  {
+
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+        color: white;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1600px)  {
+
+    .server {
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .blue-container {
+        padding: 7em 0 2em;
+    }
+
+    .blue-container ul li p, blockquote {
+        font-size: 1.3em;
+    }
+
+    .gray-container {
+        padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 8%;
+        margin-top: -4px;
+    }
+
+}
+#navitem
+{
+    background:white;
+}
+section
+{
+    color: white;
+}
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  color: black;
+}
+
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
+
+    </style>
+  </head>
+  <body>
+        <title>Tesla</title>
+    <div class="intro">
+      <h1>T E S L A </h1>
+      <video src="Rain - 78.mp4"></video>
+    </div>
+        <div class="info">
+      <div class="container">
+        <header>
+           <img src="http://pngimg.com/uploads/tesla_logo/tesla_logo_PNG21.png" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="https://cdn0.iconfinder.com/data/icons/user-interface-151/24/List_menu_toggle-512.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="hide-mobile show-desktop" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_469207.png" alt="exit menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.tesla.com/service">Services</a></li>
+                    <li><a href="https://www.tesla.com/About">About</a></li>
+                    <li><a href="https://www.tesla.com/contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+           
+            <p class="subhead">“To accelerate the advent of sustainable transport and electric technology”</p>
+             <div class="server" id="server" ></div>
+            <img id="switch" src="http://pngimg.com/uploads/tesla_car/tesla_car_PNG6.png">
+
+            <img id="scroll" src="https://static.thenounproject.com/png/54414-200.png" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img id="img1" src="http://pngimg.com/uploads/tesla_car/tesla_car_PNG60.png" alt="Tesla">
+                    <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Performance Wheels and Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph in as little as 3.2 seconds.</p>
+                </li>
+                <li>
+                    <img id="img2" src="https://st.motortrend.com/uploads/sites/10/2015/11/2015-tesla-model-s-sedan-angular-front.png" alt="Tesla">
+                    <p>Model S sets an industry standard for performance and safety. Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions – with Dual Motor All-Wheel Drive, adaptive air suspension and ludicrous acceleration</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img id="img5"src="http://www.pngnames.com/files/5/Elon-Musk-PNG-Free-Download.png" alt="User testimonial picture">
+                        <blockquote>Musk is the co-founder, CEO and product architect at Tesla Motors, a company formed in 2003 that is dedicated to producing affordable, mass-market electric cars as well as battery products and solar roofs. Musk oversees all product development, engineering and design of the company's product.
+                         </blockquote>  
+                        <figcaption>Elon Musk</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Order The World's Best Electric Cars!</h2>
+        <a href="https://www.tesla.com/" class="cta">Order Now</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="https://cdn0.iconfinder.com/data/icons/car-brands/550/Tesla_logo-512.png" class="logo1" alt="logo">
+                </a>
+                <p class="address">Palo Alto, California<br>USA</p>
+                <ul class="footer-links">
+                    <li><a href="https://www.tesla.com/about/legal">Terms of Service</a></li>
+                    <li><a href="https://www.tesla.com/about/legal">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+   </div> 
+
+
+    <script>
+   
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const intro = document.querySelector(".intro");
+const video = intro.querySelector("video");
+const text = intro.querySelector("h1");
+
+const section = document.querySelector("section");
+const end = section.querySelector("h1");
+
+const controller = new ScrollMagic.Controller();
+let scene = new ScrollMagic.Scene({
+  duration: 3800,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setPin(intro)
+  .addTo(controller);
+const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+
+let scene2 = new ScrollMagic.Scene({
+  duration: 3000,
+  triggerElement: intro,
+  triggerHook: 0
+})
+  .setTween(textAnim)
+  .addTo(controller);
+let accelamount = 0.1;
+let scrollpos = 0;
+let delay = 0;
+
+scene.on("update", e => {
+  scrollpos = e.scrollPos / 1000;
+});
+
+setInterval(() => {
+  delay += (scrollpos - delay) * accelamount;
+  console.log(scrollpos, delay);
+
+  video.currentTime = delay;
+}, 33.3);
+
+    </script>
+  </body>
+</html>
